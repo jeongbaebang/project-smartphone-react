@@ -19,7 +19,7 @@ interface CustomTheme {
 
 export const lightTheme: DefaultTheme = {
   background: {
-    primary: '#ffffff',
+    primary: 'silver',
     secondary: '#f8f8f8',
   },
   text: {
