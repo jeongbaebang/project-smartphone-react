@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 import { ScreenTop } from './Top';
+import { ScreenMain } from './Main';
 
 const Screen = () => {
   return (
     <Container>
       <ScreenTop />
+      <ScreenMain />
     </Container>
   );
 };
