@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
+/**
+ * 스크린 헤더
+ *
+ * 시간, 통신사, 배터리정보를 포함한다.
+ */
 export const ScreenTop = () => {
   const [currentTime, setCurrentTime] = useState(getTime());
 
