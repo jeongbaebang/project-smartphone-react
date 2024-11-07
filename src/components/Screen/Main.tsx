@@ -30,7 +30,7 @@ const Container = styled.div`
   height: 100%;
   border-radius: 2px;
   background-size: cover;
-  background-image: url('./public/images/bg00.jpg');
+  background-image: url('/images/bg00.jpg');
 `;
 
 const AppListContainer = styled.div`

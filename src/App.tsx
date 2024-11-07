@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Layout from './components/Layout';
 import Screen from './components/Screen';
@@ -9,6 +10,7 @@ function App() {
       <Layout>
         <Header />
         <Screen />
+        <Footer />
       </Layout>
     </>
   );
