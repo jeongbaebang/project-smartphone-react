@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 
 /**
  * 홈 스크린
+ *
+ * 다양한 앱을 포함하고 있다.
  */
 const Home = () => {
   const navigate = useNavigate();

@@ -1,6 +1,11 @@
 import { PropsWithChildren } from 'react';
 import styled from 'styled-components';
 
+/**
+ * 디바이스 전체 컨테이너를 담당한다.
+ *
+ * 디바이스 높이, 너비, 그림자 등 외부 요소를 포함하고 있다.
+ */
 const Layout: React.FC<PropsWithChildren> = ({ children }) => {
   return <Container>{children}</Container>;
 };

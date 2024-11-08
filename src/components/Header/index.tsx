@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+/**
+ * 디바이스 상단을 담당한다.
+ */
 const Header = () => {
   return (
     <Container>

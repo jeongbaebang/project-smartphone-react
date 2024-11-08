@@ -9,6 +9,9 @@ interface AppItemProps {
   cursor?: boolean;
 }
 
+/**
+ * 사용자 앱을 표시한다.
+ */
 export const AppItem: React.FC<AppItemProps> = ({
   Icon,
   name,
