@@ -1,7 +1,7 @@
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Footer from './components/device/Footer';
+import Header from './components/device/Header';
 import Layout from './components/Layout';
-import Screen from './components/Screen';
+import Screen from './components/device/Screen';
 
 function Smartphone() {
   return (

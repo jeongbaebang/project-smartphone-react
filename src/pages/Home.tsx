@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { AppItem, EmptyAppItem } from '../components/Screen/AppItem';
+import { AppItem, EmptyAppItem } from '../components/device/Screen/AppItem';
 import { SiNotepadplusplus } from 'react-icons/si';
 import { useNavigate } from 'react-router-dom';
 
