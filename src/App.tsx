@@ -1,6 +1,6 @@
 import Footer from './components/device/Footer';
 import Header from './components/device/Header';
-import Layout from './components/Layout';
+import Layout from './components/device/Layout';
 import Screen from './components/device/Screen';
 
 function Smartphone() {
