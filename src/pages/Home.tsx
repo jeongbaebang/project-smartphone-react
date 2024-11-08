@@ -17,6 +17,7 @@ const Home = () => {
     <>
       <AppListContainer>
         <AppItem
+          cursor
           name="todo"
           Icon={SiNotepadplusplus}
           backgroundColor="#ABD076"
