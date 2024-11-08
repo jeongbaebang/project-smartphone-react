@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Layout from './components/Layout';
 import Screen from './components/Screen';
 
-function App() {
+function Smartphone() {
   return (
     <>
       <h1>wanted-challenge-fe-27</h1>
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default Smartphone;

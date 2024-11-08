@@ -1,9 +1,16 @@
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const onClickHandler = () => {
+    navigate('/');
+  };
+
   return (
     <Container>
-      <HomeButton />
+      <HomeButton onClick={onClickHandler} />
     </Container>
   );
 };

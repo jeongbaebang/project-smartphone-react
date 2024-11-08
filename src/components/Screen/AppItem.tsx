@@ -5,15 +5,17 @@ interface AppItemProps {
   name: string;
   Icon: IconType;
   backgroundColor?: string;
+  onClick?: () => void;
 }
 
 export const AppItem: React.FC<AppItemProps> = ({
   Icon,
   name,
   backgroundColor,
+  onClick,
 }) => {
   return (
-    <AppItemContainer>
+    <AppItemContainer onClick={onClick}>
       <AppLogo style={{ backgroundColor }}>
         <Icon size={50} />
       </AppLogo>
