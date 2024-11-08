@@ -17,6 +17,7 @@ export const ScreenMain = () => {
 const Container = styled.div`
   width: 100%;
   height: 100%;
+  max-height: 434px; // screenHeight - screenBorderTop - screenTopHeight
   border-radius: 2px;
   background-size: cover;
   background-image: url('/images/bg00.jpg');
