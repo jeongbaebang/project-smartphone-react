@@ -1,15 +1,29 @@
 import styled from 'styled-components';
+import { AppItem, EmptyAppItem } from '../components/device/Screen/AppItem';
 import { SiNotepadplusplus } from 'react-icons/si';
-import { AppItem, EmptyAppItem } from './AppItem';
+import { useNavigate } from 'react-router-dom';
 
-export const ScreenMain = () => {
+/**
+ * 홈 스크린
+ *
+ * 다양한 앱을 포함하고 있다.
+ */
+const Home = () => {
+  const navigate = useNavigate();
+
+  const onClickTodoHandler = () => {
+    navigate('/todos');
+  };
+
   return (
-    <Container>
+    <>
       <AppListContainer>
         <AppItem
+          cursor
           name="todo"
           Icon={SiNotepadplusplus}
           backgroundColor="#ABD076"
+          onClick={onClickTodoHandler}
         />
         <EmptyAppItem />
         <EmptyAppItem />
@@ -21,17 +35,9 @@ export const ScreenMain = () => {
         <EmptyAppItem />
         <EmptyAppItem />
       </AppListBottomContainer>
-    </Container>
+    </>
   );
 };
-
-const Container = styled.div`
-  width: 100%;
-  height: 100%;
-  border-radius: 2px;
-  background-size: cover;
-  background-image: url('/images/bg00.jpg');
-`;
 
 const AppListContainer = styled.div`
   width: 100%;
@@ -51,3 +57,5 @@ const AppListBottomContainer = styled.div`
   align-items: center;
   justify-content: space-around;
 `;
+
+export default Home;

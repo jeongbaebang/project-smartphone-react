@@ -5,15 +5,22 @@ interface AppItemProps {
   name: string;
   Icon: IconType;
   backgroundColor?: string;
+  onClick?: () => void;
+  cursor?: boolean;
 }
 
+/**
+ * 사용자 앱을 표시한다.
+ */
 export const AppItem: React.FC<AppItemProps> = ({
   Icon,
   name,
   backgroundColor,
+  onClick,
+  cursor,
 }) => {
   return (
-    <AppItemContainer>
+    <AppItemContainer onClick={onClick} $cursor={cursor}>
       <AppLogo style={{ backgroundColor }}>
         <Icon size={50} />
       </AppLogo>
@@ -26,14 +33,14 @@ export const EmptyAppItem = () => {
   return <AppItemContainer />;
 };
 
-const AppItemContainer = styled.div`
+const AppItemContainer = styled.div<{ $cursor?: boolean }>`
   width: 56px;
   height: 50px;
   display: inline-block;
   margin: 8px;
   border-radius: 10px;
   background-color: rgb(255 255 255 / 40%);
-  cursor: pointer;
+  cursor: ${(props) => (props.$cursor ? 'pointer' : 'default')};
 `;
 
 const AppLogo = styled.div`

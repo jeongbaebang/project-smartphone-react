@@ -1,9 +1,21 @@
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
+/**
+ * 디바이스 하단을 담당한다.
+ *
+ * 홈버튼이 존재하고, 클릭 이벤트가 발생하면 홈 화면으로 렌더링 된다.
+ */
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const onClickHandler = () => {
+    navigate('/');
+  };
+
   return (
     <Container>
-      <HomeButton />
+      <HomeButton onClick={onClickHandler} />
     </Container>
   );
 };
