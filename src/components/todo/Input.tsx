@@ -59,7 +59,7 @@ const InputContainer = styled.div`
   display: flex;
   flex-direction: row;
   gap: 15px;
-  padding: 10px;
+  padding: 8px;
   width: 100%;
 `;
 

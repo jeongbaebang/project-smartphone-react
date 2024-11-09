@@ -30,7 +30,7 @@ const Button = styled.button<{ $size?: number }>`
   align-items: center;
 
   background-color: inherit;
-  border: ${({ theme }) => `2px solid ${theme.text.secondary}`};
+  border: ${({ theme }) => `2px solid ${theme.background.primary}`};
   border-radius: 10px;
   color: ${({ theme }) => `${theme.text.secondary}`};
   font-size: ${({ $size }) => `${$size}px`};

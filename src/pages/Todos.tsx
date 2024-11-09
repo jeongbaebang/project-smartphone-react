@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 import AddTodoForm from '../components/todo/AddTodoForm';
+import TodoList from '../components/todo/TodoList';
+import TodoDetail from '../components/todo/TodoDetail';
 
 const Todos = () => {
   return (
@@ -8,9 +10,9 @@ const Todos = () => {
       {/* 생성 */}
       <AddTodoForm />
       {/* 목록 */}
-      <h1>test</h1>
+      <TodoList />
       {/* 상세 아이템  */}
-      <h1>test</h1>
+      <TodoDetail />
     </Container>
   );
 };
@@ -21,8 +23,9 @@ const Container = styled.div`
   overflow-x: scroll;
   width: 100%;
   height: 100%;
-  background-color: #f8f8f8;
+  background-color: #eeeded;
   padding: 4px;
+  gap: 5px;
 `;
 
 export default Todos;
